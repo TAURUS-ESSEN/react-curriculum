@@ -20,7 +20,7 @@ export function App() {
   const [color, setColor] = useState('#0e374e');
 
   const [personalDetails, setPersonalDetails] = useState ({
-    name: 'Eugen von Essen',
+    name: 'Eugen aus Essen',
     email: 'eugen@gmail.com',
     phone:'+49 160-15-115-XX',
     address:'Germany, Essen',
