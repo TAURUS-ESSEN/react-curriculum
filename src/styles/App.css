@@ -1,0 +1,337 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --color1: black;
+  --color2: rgb(248, 116, 0);
+  --color3: red;
+  --color4: rgb(215, 4, 4);
+  --shadow: rgb(157, 157, 157);
+  --background-color1: #fff;
+  --text-color1: #fff;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+}
+
+.summary-title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+input, textarea {
+  background-color: rgb(248, 249, 251);
+}
+
+.wrapper {
+  width: 95%;
+  display: flex;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 1rem;
+}
+
+.dataFields, .stylesBlock  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: flex-start;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+.dataFieldsContent, .stylesBlock  {
+  width: 50%;
+}
+
+.buttonStyle1 {
+  min-height: 3em;
+  min-width: 5em;
+  padding: 0.6em;
+  margin: 0.5em;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color1);
+  color: var(--text-color1);
+  transition: 0.5s;
+}
+
+.buttonStyle1:hover{
+  background-color: var(--color2);
+  transform: scale(1.1);
+}
+
+.buttonDelete {
+  margin-top: 0.5em;
+  padding: 0.4em 0.5em;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color4);
+  color: var(--text-color1);
+  transition: 0.5s;
+}
+
+.buttonDelete:hover { 
+  transform: scale(1.2);
+}
+
+.buttonVisible {
+  border: 0;
+  background-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.buttonVisible:hover {
+  transform: scale(1.2);
+  color: var(--color2)
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap:0.3em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--background-color1);
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+.block input {
+  font-size: 1rem;
+  min-height: 1.5rem;
+  padding: 0.3em;
+  border-radius: 5px;
+  border: 1px solid rgb(207, 205, 205);
+}
+
+details {
+  padding: 0.4em 0 0 0 ;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+summary:hover {
+  color:var(--color2)
+}
+
+details[open] .arrow {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  transition: transform 0.5s ease;
+}
+
+.educationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  padding: 1em 1em 0 1em;
+}
+
+.buttonsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.educationList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.skillsList{
+  display: flex;
+  gap:0.5em;
+  padding: 0 0.5em;
+  margin: 1em;
+}
+
+.skill {
+  max-width: 100%;
+  padding: 0.5em;
+  background-color: var(--color1);
+  color: var(--text-color1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-rowLeft {
+  display: flex;
+}
+
+.flex-rowRight {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-center {
+  justify-content: center;
+  gap:2em;
+}
+
+.flex-between {
+  justify-content: space-between;
+  gap:1em;
+}
+
+.font1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.font2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.font3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutInput {
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.aboutOutput {
+  font-size: 1.1rem;
+  padding: 1em 1em 0 1em;
+  line-height: 1.4;
+}
+
+.about {
+  padding: 0 0.5em;
+}
+
+.buttonStyle2 {
+  padding: 0.5em;
+  margin-bottom: 0.3em;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.buttonStyle2:hover {
+  transform: scale(1.1);
+  color: var(--color2);
+}
+
+textarea {
+  width: 95%;
+  min-height: 100px; 
+  padding: 0.5em;
+  border: 1px solid rgb(196, 195, 195);
+  border-radius: 5px;
+  font-size: 1em;
+  resize: vertical;
+}
+
+.cvResult {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 794px; 
+  aspect-ratio: 794 / 1123;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--background-color1);
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+.personalDetails {
+  min-width: 220px;
+  padding: 1em;
+  background-color: #030358ff;
+  color: var(--text-color1);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.personalDetails h1 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.header {
+  padding: 0.2em 0.5em;
+  margin: 0.2em;
+  text-align: center;
+  background-color: rgb(230, 231, 231);
+}
+
+.educationListOutput {
+  display: flex;
+  width: 100%;
+  padding: 0.5em;  
+  font-size: 1.1em;
+}
+
+.width30 {
+  width: 20%;
+  padding:0 1em ;
+}
+
+.stylesBlock button {
+  margin: 0.5em;
+}
+
+.buttonStyle3 {
+  color: var(--color1);
+  background-color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px var(--shadow);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.buttonStyle3:hover {
+  transform: scale(1.1);
+}
+
+
